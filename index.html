@@ -2,32 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <title>SonoGym: High Performance Simulation</title>
   <style>
-    body { font-family: Arial; text-align: center; margin: 40px; }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px;
-      background: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #fff;
     }
-    img { max-width: 100%; height: auto; margin: 20px 0; }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .authors, .affiliations {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+    }
+
+    .author-note {
+      font-size: 0.85em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 40px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Center the whole abstract while ensuring left alignment for the last line */
+    .abstract {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+
+    p {
+      text-align: justify;
+      text-align-last: left; /* Left-align the last line */
+    }
+
+    /* Tasks section */
+    h3 {
+        font-size: 1.2em;
+        text-align: left; /* Align subtitles to the left */
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+
+      .videos-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+  
+      .video-wrapper {
+        flex: 1 1 45%;
+        max-width: 500px;
+      }
+  
+      video {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+  
+      /* Video titles */
+      .video-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: left;
+      }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Website</h1>
+  <div class="container">
 
-  <img src="images/overview.svg" alt="Overview of the pipeline">
+    <h1>SonoGym: High Performance Simulation for Challenging Surgical Tasks with Robotic Ultrasound</h1>
 
-  <h2>Watch this video:</h2>
-  <video width="640" height="360" controls>
-    <source src="videos/0503_baseline_recon.webm" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
+    <div class="authors">
+      Yunke Ao<sup>1,4,5</sup>, 
+      Masoud Moghani<sup>2</sup><sup>*</sup>, 
+      Mayank Mittal<sup>1</sup><sup>*</sup>, 
+      Manish Prajapat<sup>1,5</sup>, 
+      Luohong Wu<sup>2,3</sup>, 
+      Frederic Giraud<sup>4</sup>, 
+      Fabio Carrillo<sup>4</sup>, 
+      Andreas Krause<sup>1,5</sup>, 
+      Philipp Fürnstahl<sup>3,4,5</sup>
+    </div>
+
+    <div class="author-note">
+      <sup>*</sup>Equal second author contribution.
+    </div>
+
+    <div class="affiliations">
+      <sup>1</sup>ETH Zurich &nbsp;·&nbsp;
+      <sup>2</sup>University of Toronto &nbsp;·&nbsp;
+      <sup>3</sup>University of Zurich &nbsp;·&nbsp;
+      <sup>4</sup>Balgrist University Hospital &nbsp;·&nbsp;
+      <sup>5</sup>ETH AI Center
+    </div>
+
+    <img src="images/overview.svg" alt="Description of the image" width="700" height="auto">
+
+    <h2>Abstract</h2>
+    <div class="abstract">
+      <p>
+        We present <strong>SonoGym</strong>, a scalable simulation platform for robotic ultrasound, enabling parallel simulation across tens to hundreds of environments. Our framework supports realistic and real-time simulation of ultrasound data from CT-derived 3D models of the anatomy through both a physics-based and a Generative Adversarial Network (GAN) approach.
+      
+        Our framework enables the training of deep reinforcement learning (DRL) and recent imitation learning agents (IL) (vision transformers and diffusion policies) for ultrasound-guided <strong>navigation</strong>, anatomy <strong>reconstruction</strong> and <strong>surgery</strong>.
+      </p>
+     
+    </div>
+
+    <h2>Tasks</h2>
+    <h3>Ultrasound navigation</h3>
+    <div class="videos-container">
+        <div class="video-wrapper">
+          <video controls>
+            <div class="video-title">Path Planning Video</div>
+            <source src="videos/0506_net_guidance_2.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="videos-container">
+        <div class="video-wrapper">
+          <video controls>
+            <div class="video-title">Path Planning Video</div>
+            <source src="videos/0506_net_guidance_2.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+
+    <h3>Ultrasound-based anatomy reconstruction</h3>
+    <h3>Ultrasound-guided surgery</h3>
+
+  </div>
 
 </body>
 </html>
