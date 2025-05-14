@@ -56,20 +56,21 @@
     h3 {
         font-size: 1.2em;
         text-align: left; /* Align subtitles to the left */
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 5px;
       }
 
       .videos-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
       }
   
       .video-wrapper {
         flex: 1 1 45%;
-        max-width: 500px;
+        max-width: 600px;
+        text-align: center;
       }
   
       video {
@@ -83,8 +84,9 @@
       .video-title {
         font-size: 1.1em;
         font-weight: bold;
-        margin-bottom: 10px;
-        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        text-align: center;
       }
   </style>
 </head>
@@ -97,7 +99,7 @@
     <div class="authors">
       Yunke Ao<sup>1,4,5</sup>, 
       Masoud Moghani<sup>2</sup><sup>*</sup>, 
-      Mayank Mittal<sup>1</sup><sup>*</sup>, 
+      Mayank Mittal<sup>1,6</sup><sup>*</sup>, 
       Manish Prajapat<sup>1,5</sup>, 
       Luohong Wu<sup>2,3</sup>, 
       Frederic Giraud<sup>4</sup>, 
@@ -115,7 +117,8 @@
       <sup>2</sup>University of Toronto &nbsp;·&nbsp;
       <sup>3</sup>University of Zurich &nbsp;·&nbsp;
       <sup>4</sup>Balgrist University Hospital &nbsp;·&nbsp;
-      <sup>5</sup>ETH AI Center
+      <sup>5</sup>ETH AI Center &nbsp;·&nbsp;
+      <sup>6</sup>NVIDIA
     </div>
 
     <img src="images/overview.svg" alt="Description of the image" width="700" height="auto">
@@ -134,17 +137,26 @@
     <h3>Ultrasound navigation</h3>
     <div class="videos-container">
         <div class="video-wrapper">
+          <div class="video-title">Action Chunking Transformer</div>
           <video controls>
-            <div class="video-title">Path Planning Video</div>
-            <source src="videos/0506_net_guidance_2.webm" type="video/webm">
+            <source src="videos/0429_us_guidance_act.webm" type="video/webm">
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
       <div class="videos-container">
         <div class="video-wrapper">
+          <div class="video-title">Diffusion Policy</div>
           <video controls>
-            <div class="video-title">Path Planning Video</div>
+            <source src="videos/0429_us_guidance_diffusion.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    <div class="videos-container">
+        <div class="video-wrapper">
+        <div class="video-title">Proximal Policy Optimization</div>
+          <video controls>
             <source src="videos/0506_net_guidance_2.webm" type="video/webm">
             Your browser does not support the video tag.
           </video>
@@ -153,8 +165,54 @@
       
 
     <h3>Ultrasound-based anatomy reconstruction</h3>
-    <h3>Ultrasound-guided surgery</h3>
 
+    <div class="videos-container">
+        <div class="video-wrapper">
+          <div class="video-title">Submodular Proximal Policy Optimization</div>
+          <video controls>
+            <source src="videos/0503_learned_short.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="videos-container">
+        <div class="video-wrapper">
+          <div class="video-title">Heuristic</div>
+          <video controls>
+            <source src="videos/0503_baseline_recon.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    <h3>Ultrasound-guided surgery</h3>
+    <div class="videos-container">
+        <div class="video-wrapper">
+          <div class="video-title">Action Chunking Transformer</div>
+          <video controls>
+            <source src="videos/0506_ACT_surgery.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="videos-container">
+        <div class="video-wrapper">
+          <div class="video-title">Proximal Policy Optimization</div>
+          <video controls>
+            <source src="videos/0503_PPO_single_net.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    <div class="videos-container">
+        <div class="video-wrapper">
+        <div class="video-title">Proximal Policy Optimization + Safety filter</div>
+          <video controls>
+            <source src="videos/0507_sppo_single_net.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
   </div>
 
 </body>
