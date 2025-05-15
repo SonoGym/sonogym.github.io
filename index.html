@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>SonoGym: High Performance Simulation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,6 +16,45 @@
       max-width: 700px;
       margin: 0 auto;
       text-align: center;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 999px;
+      background-color: #2e2e2e;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s ease;
+    }
+
+    .pill-btn:hover {
+      background-color: #444;
+    }
+
+    .pill-btn img {
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .pill-btn i {
+      font-size: 14px;
+    }
+    .pill-btn i.fab.fa-github {
+      color: white;
     }
 
     h1 {
@@ -95,6 +135,7 @@
   <div class="container">
 
     <h1>SonoGym: High Performance Simulation for Challenging Surgical Tasks with Robotic Ultrasound</h1>
+  
 
     <div class="authors">
       Yunke Ao<sup>1,4,5</sup>, 
@@ -119,6 +160,21 @@
       <sup>4</sup>Balgrist University Hospital &nbsp;·&nbsp;
       <sup>5</sup>ETH AI Center &nbsp;·&nbsp;
       <sup>6</sup>NVIDIA
+    </div>
+
+    <div class="button-row">
+  
+      <!-- GitHub with Octocat -->
+      <a class="pill-btn" href="https://github.com/SonoGym/SonoGym" >
+        <i class="fab fa-github" style="color: white;"></i>
+        Code
+      </a>
+  
+      <!-- Hugging Face with emoji face logo -->
+      <a class="pill-btn" href="https://huggingface.co/datasets/yunkao/SonoGym_assets_expert_US_model" target="_blank">
+        <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face logo">
+        Data
+      </a>
     </div>
 
     <img src="images/overview.svg" alt="Description of the image" width="700" height="auto">
