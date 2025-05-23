@@ -142,8 +142,8 @@
       Masoud Moghani<sup>2,6</sup><sup>*</sup>, 
       Mayank Mittal<sup>1,6</sup><sup>*</sup>, 
       Manish Prajapat<sup>1,5</sup>, 
-      Luohong Wu<sup>2,3</sup>, 
-      Frederic Giraud<sup>4</sup>, 
+      Luohong Wu<sup>3,4</sup>, 
+      Frederic Giraud<sup>3,4</sup>, 
       Fabio Carrillo<sup>4</sup>, 
       Andreas Krause<sup>1,5</sup>, 
       Philipp Fürnstahl<sup>3,4,5</sup>
@@ -276,9 +276,10 @@
    
     <div class="abstract">
       <p>
-        We support high-performing safe Proximal Policy Optimization and action chunking transformer agents for the ultrasound-guided surgery task.
+        We support high-performing safe Proximal Policy Optimization (PPO) and action chunking transformer agents for the ultrasound-guided surgery task.
         The right half of the videos show the trajectories (green) from 50 environments towards the target L4 vertebra (blue).
         The goal frame / end point for the trajectory is annotated in red.
+        For PPO + safety filter, predicted unsafe actions are stopped before entering the target vertebra.
       </p>
 
     <div class="videos-container">
